@@ -1,0 +1,14 @@
+{
+  "name": "v8/tabler",
+  "description": "Table component for Laravel Models",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Aliakbar",
+      "email": "alisoleimani.dev@gmail.com"
+    }
+  ],
+  "require": {
+  }
+}
