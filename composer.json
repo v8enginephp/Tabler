@@ -13,8 +13,8 @@
     "files": [
       "src/functions.php"
     ],
-    "psr-0": {
-      "V8\\": "src/"
+    "psr-4": {
+      "V8\\": "src"
     }
   },
   "require": {
