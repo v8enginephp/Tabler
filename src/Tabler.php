@@ -56,13 +56,13 @@ trait Tabler
                 $column["data"]($model));
     }
 
-    public static function renderTable(array $records, $id = null)
+    public static function renderTable($records, $id = null, $datatable = false)
     {
         $id = $id ? $id : str_replace("\\", "_", static::class);
 
         $table = self::getTableView();
 
-        $table = str_replace(["{ID}", "{HEADER}", "{BODY}"], [$id, self::renderTableHeader(), self::renderTableBody($records)], $table);
+        $table = str_replace(["{ID}", "{HEADER}", "{BODY}", '{DATATABLE}'], [$id, self::renderTableHeader(), self::renderTableBody($records), $datatable ? "1" : "0"], $table);
 
         return $table;
     }

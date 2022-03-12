@@ -11,10 +11,13 @@
     </table>
 </div>
 <script>
-    window.onload = function (){
-        var {ID} = $('#{ID}').DataTable({
-            'pageLength': 25
-        });
+    window.onload = function () {
+        if ({DATATABLE}) {
+            var {ID} =
+            $('#{ID}').DataTable({
+                'pageLength': 25
+            });
+        }
     }
 </script>
 
