@@ -1,5 +1,5 @@
 {
-  "name": "v8/tabler",
+  "name": "v8enginephp/tabler",
   "description": "Table component for Laravel Models",
   "minimum-stability": "stable",
   "license": "proprietary",
