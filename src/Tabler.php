@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helper;
+namespace V8;
 
 define("COLUMN_PROPERTY", "prop");
 define("COLUMN_META", "meta");

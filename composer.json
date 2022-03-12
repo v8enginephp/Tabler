@@ -9,6 +9,14 @@
       "email": "alisoleimani.dev@gmail.com"
     }
   ],
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ],
+    "psr-0": {
+      "V8\\": "src/"
+    }
+  },
   "require": {
   }
 }
