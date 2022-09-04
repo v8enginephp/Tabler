@@ -79,7 +79,7 @@ trait Tabler
     private static function renderTableHeader()
     {
         $header = '';
-        foreach (self::table() as $column) {
+        foreach (collect(self::table())->sortBy('priority',SORT_NUMERIC) as $column) {
             if (self::condition($column))
                 $header .= "<th id='{$column['slug']}'>{$column['title']}</th>";
         }
@@ -101,7 +101,7 @@ trait Tabler
              * @var Tabler $record
              */
             $body .= "<tr class='t-row' data-row='$record->id'>";
-            foreach (self::table() as $column) {
+            foreach (collect(self::table())->sortBy('priority',SORT_NUMERIC) as $column) {
                 $body .= $record->renderRow($column, $record);
             }
             $body .= "</tr>";
